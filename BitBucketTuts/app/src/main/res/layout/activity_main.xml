@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:id="@+id/userName"
+            android:text="@string/user_name"
+            android:layout_alignParentLeft="true"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="75"
+            android:hint="Please enter your user name "
+            android:id="@+id/user_name_field"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/ok_button"
+            android:layout_alignEnd="@+id/ok_button"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_toEndOf="@+id/editText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/username_field"
+        android:id="@+id/userpassword_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:text="@string/user_password"
+            android:layout_alignParentLeft="true"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="75"
+            android:hint="Please enter your password "
+            android:id="@+id/password_field"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/ok_button"
+            android:layout_alignEnd="@+id/ok_button"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_toEndOf="@+id/editText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/userpassword_field"
+        android:id="@+id/userconfirmpassword_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password"
+            android:text="@string/user_confirm"
+            android:layout_alignParentLeft="true"/>
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_weight="75"
+            android:hint="Please confirm your password "
+            android:id="@+id/confirm_password_field"
+            android:layout_alignParentTop="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:text="@string/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userconfirmpassword_field"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
